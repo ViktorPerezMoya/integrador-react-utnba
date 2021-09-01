@@ -1,0 +1,39 @@
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.carousel-caption {
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.buscados{
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+
+footer{
+    height: 100px;
+    background-color: rgb(201, 201, 201);
+    margin-top: 1em;
+    padding-top: 4em;
+}
+
+.btn-primary, .bg-primary{
+    background-color: rgb(223, 0, 93) !important;
+    border-color: rgb(187, 0, 78);
+}
+.btn-primary:hover{
+    background-color: rgb(145, 0, 60);
+    border-color: rgb(110, 0, 46);
+}
+
+#mascotas-perdidas{
+    margin-left: 1em;
+}
+
+.nosotros{
+    width: 100%;
+}
