@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascotas Perdidas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <header>        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <img src="./img/logo.png" alt="" height="34" class="d-inline-block align-text-top">
+              <a class="navbar-brand" href="#">Mascotas Perdidas</a>
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link" href="busquedas.html">Todas las Busquedas</a>
+                  <a class="nav-link active" href="buscar.html">Perdi mi Mascota</a>
+                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header> 
+
+    <section class="section">
+        <article id="nosotros">            
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center buscados">
+                        <h1>Publica tu Busqueda</h1>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Nombre de mascota">
+                            </div>
+                            <div class="mb-3">
+                                <label for="edad" class="form-label">Edad:</label>
+                                <input type="number" min="0" class="form-control" id="edad" placeholder="Edad de mascota">
+                            </div>
+                            <div class="mb-3">
+                                <label for="raza" class="form-label">Raza:</label>
+                                <input type="text" class="form-control" id="raza" placeholder="Raza de mascota">
+                            </div>
+                            <div class="mb-3">
+                                <label for="color" class="form-label">Color:</label>
+                                <input type="text" class="form-control" id="color" placeholder="Color de mascota">
+                            </div>
+                            <div class="mb-3">
+                                <label for="tamano" class="form-label">Tamaño:</label>
+                                <select class="form-select" aria-label="Tamaño de mascota">
+                                    <option selected>Seleccione...</option>
+                                    <option value="1">Pequeño</option>
+                                    <option value="2">Mediano</option>
+                                    <option value="3">Grande</option>
+                                </select>
+                            </div>
+                            <div class="mb-3 form-check">
+                              <input type="radio" class="form-check-input" name="sexo" id="sexo-hembra">
+                              <label class="form-check-label" for="sexo-hembra">Hembra</label>
+                            </div>
+                            <div class="mb-3 form-check">
+                              <input type="radio" class="form-check-input"  name="sexo" id="sexo-macho">
+                              <label class="form-check-label" for="sexo-macho">Macho</label>
+                            </div>
+                            <div class="mb-3">
+                                <label for="provincia" class="form-label">Provincia:</label>
+                                <select class="form-select" aria-label="Provincia residente">
+                                    <option selected>Seleccione...</option>
+                                    <option value="1">Buenos Aires</option>
+                                    <option value="2">Capital Federal</option>
+                                    <option value="3">Catamarca</option>
+                                    <option value="4">Chaco</option>
+                                    <option value="5">Chubut</option>
+                                    <option value="6">Cordoba</option>
+                                    <option value="7">Corrientes</option>
+                                    <option value="8">Entre Rios</option>
+                                    <option value="9">Formosa</option>
+                                    <option value="10">Jujuy</option>
+                                    <option value="11">La Pampa</option>
+                                    <option value="12">La Rioja</option>
+                                    <option value="13">Mendoza</option>
+                                    <option value="14">Misiones</option>
+                                    <option value="15">Neuquen</option>
+                                    <option value="16">Rio Negro</option>
+                                    <option value="17">Salta</option>
+                                    <option value="18">San Juan</option>
+                                    <option value="19">San Luis</option>
+                                    <option value="20">Santa Cruz</option>
+                                    <option value="21">Santa Fe</option>
+                                    <option value="22">Santiago del Estero</option>
+                                    <option value="23">Tierra del Fuego</option>
+                                    <option value="24">Tucuman</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="foto" class="form-label">Suba una foto</label>
+                                <input class="form-control" type="file" id="foto">
+                              </div>
+                            <div class="mb-3">
+                              <label for="email" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="mb-3">
+                              <label for="descripcion" class="form-label">Descripción detallada de la mascota</label>
+                              <textarea class="form-control" id="descripcion" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <footer class="text-center">
+        <h5>&copy; Victor Perez Moya</h5>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
